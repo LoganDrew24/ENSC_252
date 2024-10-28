@@ -45,6 +45,8 @@ port map (
 			 );
 LEDR(4) <= Cout_sig(0);
 
+LEDR( 3 downto 0 ) <= sig( 3 downto 0 );
+
 inst1 : SegDecoder
 port map (
 			 sig(3 downto 0), HEX0
